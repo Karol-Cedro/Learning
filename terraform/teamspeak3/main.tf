@@ -24,4 +24,20 @@ resource "google_compute_instance" "vm_instance" {
   }
 }
 
-#TODO: add firewall rules
+resource "google_compute_firewall" "default" {
+  name    = "ts3-firewall"
+  network = "default"
+
+  allow {
+    protocol = "tcp"
+    ports    = ["10011", "30033"]
+  }
+
+  allow {
+    protocol = "udp"
+    ports    = ["9987"]
+  }
+
+  target_tags = ["ts3"]
+  source_ranges = [ "0.0.0.0/0" ]
+}
