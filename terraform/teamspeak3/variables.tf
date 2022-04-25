@@ -1,6 +1,6 @@
-variable "project" {}
-
-variable "credentials_file" {}
+variable "project" {
+  default = "teamspeak3-terraform"
+}
 
 variable "region" {
   default = "europe-central2"
@@ -8,4 +8,20 @@ variable "region" {
 
 variable "zone" {
   default = "europe-central2-a"
+}
+
+variable "image" {
+  default = "ubuntu-os-cloud/ubuntu-2004-lts"
+}
+
+variable "disk_size" {
+  default = "10"
+}
+
+variable "disk_type" {
+  default = "pd-balanced"
+}
+
+variable "machine_type" {
+  default = "g1-small"
 }
