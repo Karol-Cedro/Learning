@@ -1,5 +1,5 @@
 variable "project" {
-  default = "teamspeak3-terraform"
+  default = "teamspeak3-350717"
 }
 
 variable "region" {
