@@ -1,4 +1,4 @@
-package com.designpatterns.behavioral.factory;
+package com.designpatterns.creational.factory;
 
 public class StrawberryCookies implements Cookies {
 

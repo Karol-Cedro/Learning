@@ -22,10 +22,11 @@ także pozwalają na utrzymanie *Clean code* projektu.
   pozwala produkować różne typy oraz reprezentacje obiektu używając tego samego kodu konstrukcyjnego.
 
 
-- **Strategia** -
+- **Strategia** - to wzorzec projektowy zakładający przekształcenie zestawu zachowań w obiekty, 
+które można stosować zamiennie w pierwotnym obiekcie.
 
 
-- **Obserwator** -
+- **Obserwator** - to wzorzec projektowy pozwalający obiektom powiadamiać inne obiekty o zmianach swojego stanu.
 
 
 - **Fasada** - to wzorzec projektowy wyposażający złożony system klas, bibliotekę lub framework w uproszczony interfejs.

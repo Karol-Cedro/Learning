@@ -1,4 +1,4 @@
-package com.designpatterns.behavioral.builder;
+package com.designpatterns.creational.builder;
 
 public abstract class PizzaBuilder {
     private Pizza pizza;

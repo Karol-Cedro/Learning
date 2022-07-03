@@ -1,4 +1,4 @@
-package com.designpatterns.behavioral.factory;
+package com.designpatterns.creational.factory;
 
 public class Application {
     public static void main(String[] args) {
