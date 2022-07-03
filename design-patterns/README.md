@@ -21,11 +21,16 @@ także pozwalają na utrzymanie *Clean code* projektu.
 - **Budowniczy** - jest wzorcem, który daje możliwość tworzenia złożonych obiektów etapami, krok po kroku. Wzorzec ten
   pozwala produkować różne typy oraz reprezentacje obiektu używając tego samego kodu konstrukcyjnego.
 
-- **Fasada** -
-
-- **Dekorator** -
 
 - **Strategia** -
 
+
 - **Obserwator** -
+
+
+- **Fasada** - to wzorzec projektowy wyposażający złożony system klas, bibliotekę lub framework w uproszczony interfejs.
+
+
+- **Dekorator** - to wzorzec pozwalający na dodawanie obiektom nowych obowiązków w sposób dynamiczny — poprzez
+  “opakowywanie” ich w specjalne obiekty posiadające potrzebną funkcjonalność.
 
