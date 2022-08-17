@@ -4,7 +4,7 @@ echo "----------------------------------------"
 echo "installing needed dependencies"
 echo "----------------------------------------"
 sudo apt-get  update
-sudo apt-get install -y x11vnc xvfb libxcursor1 ca-certificates bzip2 libnss3 libegl1-mesa x11-xkb-utils libasound2 libglib2.0-0 python
+sudo apt-get install -y x11vnc xvfb libxcursor1 ca-certificates bzip2 libnss3 libegl1-mesa x11-xkb-utils libasound2 libglib2.0-0 python '^libxcb.*-dev' libx11-xcb-dev libglu1-mesa-dev libxrender-dev libxi-dev libxkbcommon-dev libxkbcommon-x11-dev
 sudo update-ca-certificates
 
 echo "----------------------------------------"
