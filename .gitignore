@@ -17,6 +17,7 @@
 ###Java projects
 .idea
 *.iml
+out
 
 ###Others
 *.ini

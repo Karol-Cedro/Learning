@@ -1,5 +1,5 @@
 variable "project" {
-  default = "teamspeak3-350717"
+  default = "teamspeak3-359716"
 }
 
 variable "region" {
