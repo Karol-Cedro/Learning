@@ -3,8 +3,8 @@
 echo "----------------------------------------"
 echo "installing needed dependencies"
 echo "----------------------------------------"
-sudo apt-get  update
-sudo apt-get install -y x11vnc xvfb libxcursor1 ca-certificates bzip2 libnss3 libegl1-mesa x11-xkb-utils libasound2 libglib2.0-0 python '^libxcb.*-dev' libx11-xcb-dev libglu1-mesa-dev libxrender-dev libxi-dev libxkbcommon-dev libxkbcommon-x11-dev
+sudo apt-get update
+sudo apt-get install -y x11vnc xvfb libxcursor1 ca-certificates bzip2 libnss3 libegl1-mesa x11-xkb-utils libasound2 libglib2.0-0 python '^libxcb.*-dev' libx11-xcb-dev libglu1-mesa-dev libxrender-dev libxi-dev libxkbcommon-dev libxkbcommon-x11-dev >/dev/null 2>&1
 sudo update-ca-certificates
 
 echo "----------------------------------------"
@@ -22,7 +22,6 @@ echo "----------------------------------------"
 echo "creating folder "
 echo "----------------------------------------"
 sudo mkdir -p /opt/sinusbot
-
 cd /opt/sinusbot
 sudo wget https://www.sinusbot.com/dl/sinusbot.current.tar.bz2
 
@@ -74,8 +73,7 @@ sudo chown sinusbot:sinusbot youtube-dl
 echo "----------------------------------------"
 echo "setting path to youtube.dl in sinusbot config.ini"
 echo "----------------------------------------"
-var="/opt/sinusbot/youtube-dl"
-sudo sed -i -e 's/^YoutubeDLPath.*/YoutubeDLPath = ${var}/g' config.ini
+sudo sed -i -e 's/^YoutubeDLPath.*/YoutubeDLPath = "\/opt\/sinusbot\/youtube-dl"/g' config.ini
 
 echo "----------------------------------------"
 echo "granting sinusbot user permissions on specified folder"
